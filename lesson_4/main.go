@@ -3,19 +3,20 @@ package main
 import (
 	"fmt"
 	"sort"
+	"strings"
 )
 
 func main() {
-	// greetings := "Greetings, I'm Chara"
+	greetings := "Greetings, I'm Chara"
 	// Strings
-	// fmt.Println(strings.Contains(greetings, "Chara"))
-	// fmt.Println(strings.ReplaceAll(greetings, "Chara", "an Asian"))
-	// fmt.Println(strings.ToUpper(greetings))
-	// fmt.Println(strings.Index(greetings, "a"))
-	// fmt.Println(strings.Split(greetings, " "))
+	fmt.Println(strings.Contains(greetings, "Chara"))
+	fmt.Println(strings.ReplaceAll(greetings, "Chara", "an Asian"))
+	fmt.Println(strings.ToUpper(greetings))
+	fmt.Println(strings.Index(greetings, "a"))
+	fmt.Println(strings.Split(greetings, " "))
 
 	// the original value is unchanged
-	// fmt.Println("original string value =", greetings)
+	fmt.Println("original string value =", greetings)
 
 	// Sort in the order
 	ages := []int{45, 20, 35, 30, 75, 60, 50, 25}
