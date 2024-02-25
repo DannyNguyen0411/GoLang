@@ -38,7 +38,7 @@ func main() {
 
 		isValidName := len(firstName) >= 2 && len(lastName) >= 2
 		isValidEmail := strings.Contains(email, "@")
-		isValidTicketNumber := userTickets > 0 && userTickets < remainingTickets
+		isValidTicketNumber := userTickets >= 0 && userTickets <= remainingTickets
 
 		if isValidName && isValidEmail && isValidTicketNumber {
 			remainingTickets = remainingTickets - userTickets
@@ -62,7 +62,7 @@ func main() {
 		} else {
 			if !isValidName {
 				fmt.Println("first name or last name you entered is too short.")
-			} 
+			}
 			if !isValidEmail {
 				fmt.Println("email you entered doesn't contain '@' sign.")
 			}
@@ -71,4 +71,24 @@ func main() {
 			}
 		}
 	}
+
+
+	city := "London"
+	fmt.Println("Which city would you like to book?")
+	fmt.Scan(&city)
+
+	switch city {
+		case "Rotterdam":
+			// execute code for booking Rotterdam conference tickets
+		case "Singapore", "Hong Kong":
+			// execute code for booking Singapore conference tickets
+		case "London", "Saigon":
+			// execute code for booking London conference tickets
+			fmt.Println("Would you like some British tea?")
+		case "Tokyo":
+			// execute code for booking Tokyo conference tickets
+		default:
+			fmt.Println("No valid city selected")
+	}
+
 }
