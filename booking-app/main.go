@@ -64,12 +64,11 @@ func main() {
 				fmt.Println("first name or last name you entered is too short.")
 			} 
 			if !isValidEmail {
-				fmt.Println("email you entered is too short.")
+				fmt.Println("email you entered doesn't contain '@' sign.")
 			}
-			if !isValidName {
-				fmt.Println("first name or last name you entered is too short.")
+			if !isValidTicketNumber {
+				fmt.Println("number of tickets you entered is invalid.")
 			}
-			fmt.Println("Your input data is invalid, try again")
 		}
 	}
 }
